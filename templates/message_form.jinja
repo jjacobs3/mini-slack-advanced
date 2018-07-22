@@ -1,0 +1,12 @@
+{% extends "base.jinja" %}
+{% block content %}
+<form action="/handleMessageForm" method="GET">
+From:<br>
+<input type="text" name="fromname"><br>
+To:<br>
+<input type="text" name="tonames"><br>
+Message:<br>
+<input type="textbox" name="messagetext"><br>
+<input type="submit" value="Send Message!">
+</form>
+{% endblock %}

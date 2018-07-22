@@ -1,0 +1,8 @@
+{% extends "base.jinja" %}
+{% block content %}
+<ol>
+{% for user_name in user_list %}
+<li>{{ user_name }}</li>
+{% endfor %}
+</ol>
+{% endblock %}

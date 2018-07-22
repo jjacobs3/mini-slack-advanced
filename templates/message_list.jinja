@@ -1,0 +1,7 @@
+{% extends "base.jinja" %}
+{% block content %}
+{% for message in message_list %}
+{{ message["text"] }}<br>(from {{ message["sender_name"] }} to {{ message["recipients"] }})<br>
+<hr>
+{% endfor %}
+{% endblock %}
